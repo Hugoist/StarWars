@@ -1,0 +1,83 @@
+:root {
+  --yellow: #ffe42a; }
+
+@font-face {
+  font-family: 'Starjhol';
+  src: url("Starjhol.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background-color: #000;
+  color: var(--yellow); }
+
+.wrapper {
+  max-width: 1040px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative; }
+
+.episodes-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  list-style: none; }
+
+.title {
+  margin-top: 6%;
+  font-family: Starjhol, sans-serif;
+  font-size: calc(21px + 11*(100vw - 320px)/1600);
+  font-weight: 700;
+  text-align: center; }
+
+.description {
+  font-family: Impact, sans-serif;
+  font-size: calc(12px + 6*(100vw - 320px)/1600);
+  letter-spacing: 2px;
+  line-height: 1.25;
+  text-align: justify; }
+
+.director, .release {
+  font-family: Impact, sans-serif;
+  font-size: calc(10px + 4*(100vw - 320px)/1600);
+  letter-spacing: 2px; }
+
+.btn-characters,
+.btn-hide {
+  padding: 10px 15px;
+  border: 2px solid var(--yellow);
+  border-radius: 5px;
+  font: calc(11px + 5*(100vw - 320px)/1600) Impact, sans-serif;
+  letter-spacing: 2px;
+  color: var(--yellow);
+  background-color: #000; }
+
+#popup {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 50px;
+  width: 250px;
+  height: auto;
+  background-color: #000;
+  border: 2px solid var(--yellow);
+  -webkit-box-shadow: 0 0 100px var(--yellow);
+          box-shadow: 0 0 100px var(--yellow);
+  z-index: 1000; }
+
+.hidden {
+  display: none; }
+
+#popup ul {
+  list-style: none; }
+
+#popup li {
+  font-family: Impact, sans-serif;
+  font-size: calc(12px + 6*(100vw - 320px)/1600);
+  letter-spacing: 1px; }
